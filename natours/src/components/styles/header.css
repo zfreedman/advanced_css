@@ -8,14 +8,41 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   height: 95vh;
+  position: relative;
+}
+
+.heading-primary-main {
+  display: block;
+}
+
+.heading-primary {
+  color: #fff;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 35px;
+  text-transform: uppercase;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
 
 .logo {
+  height: 35px;
+}
+
+.logo-box {
   left: 40px;
   position: absolute;
   top: 40px;
 }
 
-.logo-box {
-
+.text-box {
+  left: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
