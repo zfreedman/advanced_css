@@ -1,8 +1,7 @@
 import React from "react";
 
 class App extends React.Component {
-  render = () => {
-    console.log(this);
+  render () {
     return (
       <div>
         App goes here
