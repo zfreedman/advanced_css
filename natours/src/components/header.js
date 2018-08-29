@@ -6,7 +6,9 @@ class Header extends React.Component {
   render () {
     return (
       <header className="header">
-        Some text...
+        <div className="logo-box">
+          <img src={require("./img/logo-white.png")} alt="Logo" className="logo" />
+        </div>
       </header>
     );
   }

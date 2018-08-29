@@ -9,3 +9,13 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   height: 95vh;
 }
+
+.logo {
+  left: 40px;
+  position: absolute;
+  top: 40px;
+}
+
+.logo-box {
+
+}

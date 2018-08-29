@@ -6,5 +6,5 @@ import Header from "../header";
 
 it("has a header", () => {
   const wrapper = shallow(<Header />);
-  expect(wrapper.text()).toContain("Some text...");
+  expect(wrapper.find("img").length).toEqual(1);
 });
