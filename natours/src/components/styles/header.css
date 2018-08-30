@@ -1,3 +1,33 @@
+
+/* Note: this ordering of :hover before :active is necessary,
+even though it's no longer alphabetical, because it forces :active
+to take precedence over :hover. This could also be achieved by marking
+:active as !important:
+https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class-priority-over-another
+*/
+.btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  transform: translateY(-3px);
+}
+.btn:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  transform: translateY(-1px);
+}
+
+.btn:link, .btn:visited {
+  border-radius: 100px;
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+
+.btn-white {
+  background-color: white;
+  color: #777;
+}
+
 .header {
   background-image: linear-gradient(
     to bottom right,
@@ -29,6 +59,7 @@
 .heading-primary {
   backface-visibility: hidden;
   color: #fff;
+  margin-bottom: 60px;
   text-transform: uppercase;
 }
 
@@ -86,5 +117,6 @@
   left: 50%;
   position: absolute;
   top: 40%;
+  text-align: center;
   transform: translate(-50%, -50%);
 }

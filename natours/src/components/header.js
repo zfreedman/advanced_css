@@ -22,6 +22,8 @@ class Header extends React.Component {
               is where life happens
             </span>
           </h1>
+
+          <a href="#" className="btn btn-white">Discorver our tours</a>
         </div>
       </header>
     );
