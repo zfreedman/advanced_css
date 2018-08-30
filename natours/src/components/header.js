@@ -23,7 +23,9 @@ class Header extends React.Component {
             </span>
           </h1>
 
-          <a href="#" className="btn btn-white">Discorver our tours</a>
+          <a id="mybtn" href="#" className="btn btn-animated btn-white">
+            Discorver our tours
+          </a>
         </div>
       </header>
     );
