@@ -12,22 +12,64 @@
 }
 
 .heading-primary-main {
+  animation-duration: 1s;
+  animation-name: moveInLeft;
+  animation-timing-function: ease-out;
   display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+
+  /*
+  animation-delay: 3s;
+  animatino-iteration-count: 3;
+  */
 }
 
 .heading-primary {
+  backface-visibility: hidden;
   color: #fff;
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 35px;
   text-transform: uppercase;
 }
 
 .heading-primary-sub {
+  animation: moveInRight 1s ease-out;
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.4px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .logo {
