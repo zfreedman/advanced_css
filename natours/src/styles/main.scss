@@ -1,3 +1,5 @@
+$color-grey-dark: #777;
+
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -11,7 +13,7 @@ $color-primary-dark: #28b485;
 
 body {
   box-sizing: border-box;
-  color: #777;
+  color: $color-grey-dark;
   font-family: "Lato", sans-serif;
   /* font-size: 16px; */
   font-weight: 400;
@@ -84,7 +86,7 @@ https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class
 
 .btn--white {
   background-color: white;
-  color: #777;
+  color: $color-grey-dark;
 }
 .btn--white::after {
   background-color: white;
