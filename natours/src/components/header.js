@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./styles/header.css";
+// import "./styles/header.css";
 
 class Header extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class Header extends React.Component {
       <header className="header">
         <div className="header__logo-box">
           <img
-            src={require("./img/logo-white.png")}
+            src={require("../img/logo-white.png")}
             alt="Logo"
             className="header__logo"
           />

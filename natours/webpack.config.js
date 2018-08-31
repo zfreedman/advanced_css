@@ -10,20 +10,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
 
-  mode: "development",
-
   module: {
     rules: [
-      { test: /\.css$/, use: [ "style-loader", "css-loader" ] },
       { test: /\.(js)$/, use: "babel-loader" },
-      { test: /\.(png|svg|jpg|gif)$/, use: "file-loader" }
+      { test: /\.(png|svg|jpg|gif)$/, use: "file-loader" },
     ]
-  },
-
-  plugins: [
-    new CleanWebpackPlugin(["dist"]),
-    new HtmlWebpackPlugin({
-      template: "public/index.html"
-    })
-  ]
+  }
 }
