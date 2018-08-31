@@ -39,16 +39,16 @@ https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class
   transition: all .2s;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
 
-.btn-white {
+.btn--white {
   background-color: white;
   color: #777;
 }
-.btn-white::after {
+.btn--white::after {
   background-color: white;
 }
 
@@ -65,7 +65,7 @@ https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class
   position: relative;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   animation-duration: 1s;
   animation-name: moveInLeft;
   animation-timing-function: ease-out;
@@ -87,7 +87,7 @@ https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class
   text-transform: uppercase;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   animation: moveInRight 1s ease-out;
   display: block;
   font-size: 2rem;
@@ -139,17 +139,17 @@ https://stackoverflow.com/questions/3671551/is-it-possible-to-give-one-css-class
   }
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.logo-box {
+.header__logo-box {
   left: 4rem;
   position: absolute;
   top: 4rem;
 }
 
-.text-box {
+.header__text-box {
   left: 50%;
   position: absolute;
   top: 40%;
