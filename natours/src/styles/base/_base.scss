@@ -1,0 +1,21 @@
+/* universal reset */
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* the below will scale if the user changes the browser's default
+  font-size from 16px to something else */
+  font-size: 62.5%;
+
+  // defines what 1 rem is, so it's more of a base setting,
+  // even though IT IS still typography
+}
