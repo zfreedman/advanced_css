@@ -62,7 +62,7 @@ const getAOfB = (a, b) => {
       className={`col-${a}-of-${b}`}
       key={counter++}
     >
-      Col {a} of {b}
+      {`Col ${a} of ${b}`}
     </div>
   );
 }
