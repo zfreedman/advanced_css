@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "./header";
+import GridTest from "./gridTest";
 // import "./styles/app.css";
 
 class App extends React.Component {
@@ -8,6 +9,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
+        <GridTest />
       </div>
     );
   }
