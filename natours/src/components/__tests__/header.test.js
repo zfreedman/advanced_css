@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 
 import Header from "../header";
 
-it("has a header", () => {
+it("has the correct DOM elements", () => {
   const wrapper = shallow(<Header />);
   expect(wrapper.find("img").length).toEqual(1);
 });
