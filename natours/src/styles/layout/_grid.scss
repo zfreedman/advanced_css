@@ -1,7 +1,7 @@
 .row {
   @include clearfix;
 
-  background-color: #eee;
+  // background-color: #eee;
   margin: 0 auto;
   max-width: $grid-width;
   
@@ -11,7 +11,7 @@
 
   // attribute selector
   [class^="col-"] {
-    background-color: teal;
+    // background-color: teal;
     float: left;
     // width: calc((100% - #{$gutter-horizontal}) / 2);
 
