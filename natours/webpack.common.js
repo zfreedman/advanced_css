@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(js)$/, use: "babel-loader" },
-      { test: /\.(png|svg|jpg|gif)$/, use: "file-loader" },
+      { test: /\.(png|svg|jpe?g|gif|mp4|webm)$/, use: "file-loader" },
     ]
   }
 }
