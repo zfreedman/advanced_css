@@ -17,7 +17,7 @@ class Main extends React.Component {
           <div className="row">
             {MainLeft()}
             {MainRight()}
-          </div>          
+          </div>
         </section>
       </main>
     );

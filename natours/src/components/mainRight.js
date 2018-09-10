@@ -31,7 +31,6 @@ export default function MainRight () {
 
 const renderPhoto = (num, large=true) => {
   const photo = `nat-${num}${large ? "-large" : ""}.jpg`;
-  console.log(photo);
   
   return (
     <img

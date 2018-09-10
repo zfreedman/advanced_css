@@ -1,5 +1,6 @@
 import React from "react";
 
+import Features from "./features";
 import Header from "./header";
 import Main from "./main"
 
@@ -10,6 +11,7 @@ class App extends React.Component {
         <Header />
         {/* <GridTest /> */}
         <Main />
+        <Features />
       </div>
     );
   }
