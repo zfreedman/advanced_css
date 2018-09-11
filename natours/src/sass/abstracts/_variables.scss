@@ -1,11 +1,8 @@
-// card
-$card-back-direction: to bottom right;
-$card-height: 50rem;
-
 // colors
 $color-black: #000;
 $color-grey-dark: #777;
 $color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
 $color-primary: #55c57a;
 $color-primary-dark: #28b485;
 $color-primary-light: #7ed56f;
@@ -14,6 +11,26 @@ $color-secondary-light: #ffb900;
 $color-tertiary-dark: #5643fa;
 $color-tertiary-light: #2998ff;
 $color-white: #fff;
+
+// card
+$card-back-direction: to bottom right;
+$card-heading-opacity: .85;
+$card-height: 52rem;
+$card-primary-gradient: linear-gradient(
+  $card-back-direction,
+  $color-primary-light,
+  $color-primary-dark
+);
+$card-secondary-gradient: linear-gradient(
+  $card-back-direction,
+  $color-secondary-light,
+  $color-secondary-dark
+);
+$card-tertiary-gradient: linear-gradient(
+  $card-back-direction,
+  $color-tertiary-light,
+  $color-tertiary-dark
+);
 
 // font-size
 $font-size-default: 1.6rem;
