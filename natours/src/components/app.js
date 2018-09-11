@@ -2,7 +2,8 @@ import React from "react";
 
 import Features from "./features";
 import Header from "./header";
-import Main from "./main"
+import Main from "./main";
+import Tours from "./tours";
 
 class App extends React.Component {
   render () {
@@ -12,6 +13,7 @@ class App extends React.Component {
         {/* <GridTest /> */}
         <Main />
         <Features />
+        <Tours />
       </div>
     );
   }
