@@ -1,0 +1,31 @@
+.story {
+  background-color: $color-white;
+  border-radius: .3rem;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  font-size: $font-size-default;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+  width: 75%;
+
+  &__img {
+    height: 100%;
+  }
+  
+  &__shape {
+    background-color: black;
+    clip-path: $story-circle;
+    float: left;
+    height: 15rem;
+    shape-outside: $story-circle;
+    transform: translateX(-3rem) skewX(12deg);
+    -webkit-path: $story-circle;
+    -webkit-shape-outside: $story-circle;
+    width: 15rem;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+}

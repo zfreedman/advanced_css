@@ -3,6 +3,7 @@ import React from "react";
 import Features from "./features";
 import Header from "./header";
 import Main from "./main";
+import Stories from "./stories";
 import Tours from "./tours";
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <Main />
         <Features />
         <Tours />
+        <Stories />
       </div>
     );
   }
