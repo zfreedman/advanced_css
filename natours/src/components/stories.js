@@ -5,10 +5,12 @@ export default () => {
     [
       "I had the best week ever with my family",
       "nat-8.jpg",
+      "Mary Smith",
     ],
     [
       "This was the single greatest trip of my life",
       "nat-9.jpg",
+      "Jack Wilson",
     ],
   ];
 
@@ -23,11 +25,15 @@ export default () => {
       <div className="row">
         {stories.map(Story)}
       </div>
+      <div className="u-center-text u-margin-top-huge">
+        <a href="#" className="btn-text">Read all stories &rarr;</a>
+      </div>
+
     </section>
   );
 };
 
-const Story = ([ heading, img ]) => {
+const Story = ([ heading, img, name ]) => {
   return (
     <div className="story">
       <figure className="story__shape">
@@ -36,6 +42,9 @@ const Story = ([ heading, img ]) => {
           className="story__img"
           src={require(`../img/${img}`)}
         />
+        <figcaption className="story__caption">
+          {name}
+        </figcaption>
       </figure>
 
       <div className="story__text">
