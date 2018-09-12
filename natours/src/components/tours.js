@@ -66,7 +66,7 @@ const TourCard = ({
   }, {});
 
   return (
-    <div className="col-1-of-3">
+    <div className="col-1-of-3" key={heading}>
       <div className="card">
         <div
           className={classMap["front"]}>
