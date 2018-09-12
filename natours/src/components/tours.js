@@ -9,6 +9,7 @@ export default () => {
       "sea explorer",
       30,
       "cozy hostels",
+      297,
     ],
     [
       7,
@@ -17,6 +18,7 @@ export default () => {
       "forest hiker",
       40,
       "provided tents",
+      497,
     ],
     [
       5,
@@ -25,6 +27,7 @@ export default () => {
       "snow adventurer",
       15,
       "provided tents",
+      897,
     ]
   ].map(makeTour);
 
@@ -38,6 +41,10 @@ export default () => {
       <div className="row">
         {tours.map((e, i) => TourCard(e, i + 1))}
       </div>
+
+      <div className="u-center-text u-margin-top-huge">
+        <a href="#" className="btn btn--green">Discover all tours</a>
+      </div>
     </section>
   );
 };
@@ -48,6 +55,7 @@ const TourCard = ({
   guideCount,
   heading,
   peopleCount,
+  price,
   sleepWhere,
 }, i) => {
 
@@ -84,7 +92,14 @@ const TourCard = ({
           </div>
         </div>
         <div className={classMap["back"]}>
-          back
+          <div className="card__cta">
+            <div className="card__price-box">
+              <p className="card__price-only">Only</p>
+
+              <p className="card__price-value">{`${price}`}</p>
+            </div>
+            <a href="#" className="btn btn--white">Book now</a>
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +113,7 @@ const makeTour = ([
   heading,
   peopleCount,
   sleepWhere,
+  price,
 ]) => {
   const peopleStr = peopleCount === 1 ? "person" : "people";
 
@@ -107,6 +123,7 @@ const makeTour = ([
     guideCount: `${guideCount} guide${guideCount === 1 ? "" : "s"}`,
     heading: `The ${heading}`,
     peopleCount: `Up to ${peopleCount} ${peopleStr}`,
+    price: `$${price}`,
     sleepWhere: `Sleep in: ${sleepWhere.toLowerCase()}`,
   };
 }

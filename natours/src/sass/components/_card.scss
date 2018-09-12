@@ -4,6 +4,15 @@
   perspective: 150rem;
   position: relative;
 
+  &__cta {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
   &__details {
     padding: 3rem;
 
@@ -98,6 +107,22 @@
       background-image: $card-tertiary-gradient,
         url("../img/nat-7.jpg");
     }
+  }
+
+  &__price-box {
+    color: $color-white;
+    margin-bottom: 8rem;
+    // text-align: center;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
   }
 
   &__side {
