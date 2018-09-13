@@ -52,8 +52,8 @@ export default () => {
 
 const Story = ([ heading, img, name ]) => {
   return (
-    <div className="row">
-      <div className="story" key={name}>
+    <div className="row" key={name}>
+      <div className="story">
         <figure className="story__shape">
           <img 
             alt="Person on a tour"

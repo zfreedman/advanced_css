@@ -1,5 +1,6 @@
 import React from "react";
 
+import Booking from "./booking";
 import Features from "./features";
 import Header from "./header";
 import Main from "./main";
@@ -16,6 +17,7 @@ class App extends React.Component {
         <Features />
         <Tours />
         <Stories />
+        <Booking />
       </div>
     );
   }
