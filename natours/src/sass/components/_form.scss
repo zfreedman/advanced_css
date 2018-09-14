@@ -1,0 +1,58 @@
+.form {
+  &__group {
+    
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+
+  &__input {
+    background-color: rgba($color-white, .5);
+    border: none;
+    border-bottom: .3rem solid transparent;
+    border-radius: .2rem;
+    // input elements dont automatically inherit fonts
+    color: inherit;
+    display: block;
+    // input elements don't automatically inherit fonts
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 1.5rem $side-input-padding;
+    transition: all .2s;
+    width: 90%;
+
+    &:focus {
+      border-bottom: .3rem solid $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .1);
+      outline: none;
+      
+      &:invalid {
+        border-bottom: .3rem solid $color-secondary-dark;
+      }
+    }
+
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: $side-input-padding;
+    margin-top: .7rem;
+    transition: all .3s;
+  }
+
+  // note how this is not done on the input selector
+  // + adjacent sibling selector
+  // ~ general sibling selector
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    transform: translateY(-4rem);
+    visibility: hidden;
+  }
+}

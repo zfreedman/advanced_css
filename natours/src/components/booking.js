@@ -58,23 +58,30 @@ class Booking extends React.Component {
     return Object.keys(inputs).map(key => {
       const { placeholder, type, val } = inputs[key];
       const id = placeholder.split(" ").join("-");
-      const label = placeholder.toUpperCase();
+      const properText = placeholder.split(" ").map(str => {
+        return str.length === 0
+          ? str
+          : str[0].toUpperCase() + str.substr(1)
+      }).join(" ");
 
       return (
         <div className="form__group" key={id}>
           <input
+            autoComplete="off"
             className="form__input"
             id={id}
             onChange={
               (event) => this.handleInputChange(key, event.target.value)
             }
-            placeholder={placeholder}
+            placeholder={properText}
             required={true}
             type={type}
             value={val}
           />
 
-          <label htmlFor={id} className="form__label">{label}</label>
+          <label htmlFor={id} className="form__label">
+            {properText}
+          </label>
         </div>
       );
     });
