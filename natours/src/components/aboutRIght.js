@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MainRight () {
+export default function AboutRight () {
   return (
     <div className="col-1-of-2">
       <div className="composition">

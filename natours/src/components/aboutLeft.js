@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MainLeft () {
+export default function AboutLeft () {
   return (
     <div className="col-1-of-2">
       <h3 className="heading-tertiary u-margin-bottom-small">
