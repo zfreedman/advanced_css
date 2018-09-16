@@ -47,6 +47,22 @@ $gutter-horizontal: 6rem;
 $gutter-vertical: 8rem;
 $grid-width: 114rem;
 
+// navigation
+$nav-background-offset: 6.5rem;
+$nav-background-size-0: 6rem;
+$nav-background-z-index: 100;
+// unalphabetical block start
+$nav-button-size: $nav-background-size-0 + 1rem;
+$nav-button-offset: (
+  $nav-background-offset
+    - .5 * ($nav-button-size - $nav-background-size-0)
+);
+// unalphabetical block end
+// unalphabetical block start
+$nav-nav-z-index: $nav-background-z-index + 1;
+$nav-button-z-index: $nav-nav-z-index + 1;
+// unalphabetical block end
+
 // story
 $story-circle: circle(50% at 50% 50%);
 $story-transition: all .5s ease;

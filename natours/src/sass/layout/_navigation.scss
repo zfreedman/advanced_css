@@ -1,0 +1,89 @@
+.navigation {
+  
+
+  &__background {
+    background-image: radial-gradient(
+      $color-primary-light,
+      $color-primary-dark
+    );
+    border-radius: 50%;
+    height: $nav-background-size-0;
+    position: fixed;
+    right: $nav-background-offset;
+    top: $nav-background-offset;
+    transform: scale(80);
+    width: $nav-background-size-0;
+    z-index: $nav-background-z-index;
+  }
+
+  &__button {
+    background-color: $color-white;
+    // background-color: rgba($color-black, .5);
+    border-radius: 50%;
+    height: $nav-button-size;
+    position: fixed;
+    right: $nav-button-offset;
+    top: $nav-button-offset;
+    width: $nav-button-size;
+    z-index: $nav-button-z-index;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+
+    // unalphabetical block start
+    &:link,
+    &:visited {
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 250%;
+      color: $color-white;
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .4s;
+
+      span {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+    }
+
+    &:active, &:hover {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+    // unalphabetical block end
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+
+    @include center-horizontal-vertical;
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: $nav-nav-z-index;
+  }
+}
