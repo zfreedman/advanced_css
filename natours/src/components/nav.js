@@ -14,7 +14,7 @@ class Nav extends React.Component {
           className="navigation__button"
           for="navi-toggle"
         >
-          Menu
+          <span className="navigation__icon">&nbsp;</span>
         </label>
         
         <div className="navigation__background">&nbsp;</div>

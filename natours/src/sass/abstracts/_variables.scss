@@ -63,6 +63,10 @@ $nav-button-offset: (
 $nav-nav-z-index: $nav-background-z-index + 1;
 $nav-button-z-index: $nav-nav-z-index + 1;
 // unalphabetical block end
+$nav-icon-line-rotation-checked: 135deg;
+$nav-icon-line-space-checked: 0;
+$nav-icon-line-space-hover: 1rem;
+$nav-icon-line-space-normal: .8rem;
 
 // story
 $story-circle: circle(50% at 50% 50%);
