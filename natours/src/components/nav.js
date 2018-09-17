@@ -4,8 +4,19 @@ class Nav extends React.Component {
   render () {
     return (
       <div className="navigation">
-        <NavButton />
+        <input
+          className="navigation__checkbox"
+          id="navi-toggle"
+          type="checkbox"
+        />
 
+        <label
+          className="navigation__button"
+          for="navi-toggle"
+        >
+          Menu
+        </label>
+        
         <div className="navigation__background">&nbsp;</div>
 
         <NavMenu />
@@ -13,23 +24,6 @@ class Nav extends React.Component {
     );
   }
 }
-
-const NavButton = () => (
-  <div>
-    <input
-      className="navigation__checkbox"
-      id="navi-toggle"
-      type="checkbox"
-    />
-
-    <label
-      className="navigation__button"
-      for="navi-toggle"
-    >
-      Menu
-    </label>
-  </div>
-);
 
 class NavMenu extends React.Component {
   render () {
