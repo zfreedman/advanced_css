@@ -4,6 +4,7 @@ import Footer from "./footer";
 import Header from "./header";
 import Main from "./main";
 import Navigation from "./nav";
+import Popup from "./popup";
 
 class App extends React.Component {
   render () {
@@ -14,6 +15,7 @@ class App extends React.Component {
         {/* <GridTest /> */}
         <Main />
         <Footer />
+        <Popup />
       </div>
     );
   }

@@ -12,7 +12,7 @@ class Nav extends React.Component {
 
         <label
           className="navigation__button"
-          for="navi-toggle"
+          htmlFor="navi-toggle"
         >
           <span className="navigation__icon">&nbsp;</span>
         </label>
@@ -32,7 +32,7 @@ class NavMenu extends React.Component {
         <ul className="navigation__list">
           {
             this.navItems.map((item, i) => (
-              <li className="navigation__item">
+              <li className="navigation__item" key={item}>
                 <a href="#" className="navigation__link">
                   <span>{`${i}`.padStart(2, "0")}</span>{item}
                 </a>
