@@ -98,7 +98,7 @@ const TourCard = ({
 
               <p className="card__price-value">{`${price}`}</p>
             </div>
-            <a href="#" className="btn btn--white">Book now</a>
+            <a href="#popup" className="btn btn--white">Book now</a>
           </div>
         </div>
       </div>
