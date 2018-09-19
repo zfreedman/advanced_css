@@ -10,6 +10,16 @@
   visibility: hidden;
   z-index: $popup-z-index;
 
+  &__a {
+    background-color: red;
+    flex-grow: 1;
+  }
+
+  &__b {
+    background-color: green;
+    flex-grow: 1;
+  }
+
   &__close {
     &:link, &:visited {
       color: $color-grey-dark-2;
@@ -34,7 +44,8 @@
     background-color: $color-white;
     border-radius: .3rem;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
-    display: table;
+    // display: table;
+    display: flex;
     opacity: 0;
     overflow: hidden;
     // repeating this from center-horizontal-vertical mixin
@@ -42,23 +53,56 @@
     transform: translate(-50%, -50%) scale(.25);
     transition: all .5s .2s;
     width: 75%;
+
+    @include respond(phone) {
+      height: 50rem;
+    }
   }
 
   &__left {
-    display: table-cell;
-    width: 33.333333%;
+    align-items: center;
+    // display: table-cell;
+    background-color: $color-grey-light-2;
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 5rem;
+    // width: 33.333333%;
+
+    @include respond(reg-desktop) {
+      display: none;
+    }
   }
 
   &__img {
+    // border-radius: 50%;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-size: cover;
     display: block;
+    height: auto;
     width: 100%;
+
+    &-0 {
+      background-image: url("../img/nat-8.jpg");
+    }
+
+    &-1 {
+      background-image: url("../img/nat-9.jpg");
+    }
   }
   
   &__right {
-    display: table-cell;
+    // display: table-cell;
+    flex-basis: 0;
+    flex-grow: 2;
+    margin: auto 0;
     padding: 3rem 5rem;
-    vertical-align: middle;
-    width: 66.666667%;
+    position: relative;
+    // vertical-align: middle;
+    // width: 66.666667%;
   }
 
   &:target {
@@ -76,6 +120,7 @@
     column-gap: 4rem;
     column-rule: .1rem solid $color-grey-light-2;
     font-size: 1.4rem;
+    margin-bottom: 2rem;
     hyphens: auto;
 
     -ms-hyphens: auto;
@@ -83,5 +128,16 @@
     -webkit-column-gap: 4rem;
     -webkit-column-rule: .1rem solid $color-grey-light-2;
     -webkit-hyphens: auto;
+
+    @include respond(phone) {
+      // background-color: red;
+      border: .1rem solid $color-grey-dark-2;
+      border-radius: 1rem;
+      padding: 1rem;
+      column-count: inherit;
+      height: 20rem;
+      overflow-y: scroll;
+      -webkit-column-count: inherit;
+    }
   }
 }
