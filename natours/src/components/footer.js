@@ -65,7 +65,7 @@ const FooterBottomRight = () => {
 };
 
 const FooterTop = () => (
-  <div className="footer__logo-box u-margin-bottom-big">
+  <div className="footer__logo-box">
     <img
       alt="Full logo"
       className="footer__logo"

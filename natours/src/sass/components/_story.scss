@@ -9,6 +9,16 @@
   transform: skewX(-12deg);
   width: 75%;
 
+  @include respond(tab-port) {
+    padding: 4rem;
+    padding-left: 7rem;
+    width: 100%;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
+  }
+
   &__caption {
     color: $color-white;
     font-size: 1.7rem;
@@ -50,9 +60,17 @@
     -webkit-path: $story-circle;
     -webkit-shape-outside: $story-circle;
     width: 15rem;
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 }
