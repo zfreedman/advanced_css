@@ -43,8 +43,8 @@ const renderPhoto = (num, large=true) => {
       className={`composition__photo composition__photo--p${num}`}
       key={`composition__photo__${num}`}
       sizes={
-        `(max-width: 900px) 20vw,
-        (max-width: 600px) 25vw,
+        `(max-width: 56.25em) 20vw,
+        (max-width: 37.5em) 25vw,
         230px
         `
       }
