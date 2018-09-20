@@ -80,7 +80,7 @@ const FooterTop = () => (
       <img
         alt="Full logo"
         className="footer__logo"
-        // src={require("../img/logo-green-2x.png")}
+        src={require("../img/logo-green-2x.png")}
         srcSet={`
           ${require("../img/logo-green-1x.png")} 1x,
           ${require("../img/logo-green-2x.png")} 2x
