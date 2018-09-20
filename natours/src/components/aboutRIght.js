@@ -37,6 +37,7 @@ const renderPhoto = (num, large=true) => {
     //   src={require(`../img/${photo}`)}
     // />
 
+    // resolution and density switching
     <img
       alt={`Photo ${num}`}
       className={`composition__photo composition__photo--p${num}`}
