@@ -51,18 +51,25 @@
   
   &__shape {
     background-color: black;
-    clip-path: $story-circle;
-    float: left;
+    border-radius: 50%;
     height: 15rem;
+    float: left;
+    overflow: hidden;
     position: relative;
-    shape-outside: $story-circle;
     transform: translateX(-3rem) skewX(12deg);
-    -webkit-path: $story-circle;
-    -webkit-shape-outside: $story-circle;
     width: 15rem;
 
     @include respond(phone) {
       transform: translateX(-3rem) skewX(0);
+    }
+
+    @supports (clip-path: polygon(0 0))
+    or (-webkit-clip-path: polygon(0 0)) {
+      border-radius: none;
+      clip-path: $story-circle;
+      shape-outside: $story-circle;
+      -webkit-path: $story-circle;
+      -webkit-shape-outside: $story-circle;
     }
   }
 

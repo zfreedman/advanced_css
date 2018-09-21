@@ -10,6 +10,13 @@
   visibility: hidden;
   z-index: $popup-z-index;
 
+  @supports (-webkit-backdrop-filter: blur(10px))
+  or (backdrop-filter: blur(10px)) {
+    background-color: rgba($color-black, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
   &__a {
     background-color: red;
     flex-grow: 1;
