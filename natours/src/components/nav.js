@@ -63,6 +63,7 @@ class NavMenu extends React.Component {
     const topPos = element.offsetTop;
     window.scrollTo(0, topPos);
     
+    document.querySelector(".navigation__checkbox").checked = false;
   };
 
   navItems = {
