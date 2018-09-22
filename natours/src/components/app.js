@@ -9,7 +9,7 @@ import Popup from "./popup";
 class App extends React.Component {
   render () {
     return (
-      <div>
+      <div className="app">
         <Navigation />
         <Header />
         {/* <GridTest /> */}

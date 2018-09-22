@@ -27,13 +27,21 @@ class Nav extends React.Component {
 
 class NavMenu extends React.Component {
   render () {
+    const { navItems } = this;
+    const navKeys = Object.keys(navItems);
+
     return (
       <nav className="navigation__nav">
         <ul className="navigation__list">
           {
-            this.navItems.map((item, i) => (
+            navKeys.map((item, i) => (
               <li className="navigation__item" key={item}>
-                <a href="#" className="navigation__link">
+                <a
+                  className="navigation__link"
+                  // href={`#section-${navItems[item]}`}
+                  href="#"
+                  onClick={event => this.clickNavItem(event, item)}
+                >
                   <span>{`${i}`.padStart(2, "0")}</span>{item}
                 </a>
               </li>
@@ -43,14 +51,28 @@ class NavMenu extends React.Component {
       </nav>
     );
   }
+  
+  clickNavItem = (event, key) => {
+    // this line is here to dodge the default behaviour on <a href="#">
+    // ...which scrolls to the top of the document
+    event.preventDefault();
 
-  navItems = [
-    "about natours",
-    "your benefits",
-    "popular tours",
-    "stories",
-    "book now",
-  ];
+    const element = document.querySelector(
+      `.section-${this.navItems[key]}`
+    );
+    const topPos = element.offsetTop;
+    window.scrollTo(0, topPos);
+    
+  };
+
+  navItems = {
+    "about natours": "about",
+    "your benefits": "features",
+    "popular tours": "tours",
+    "stories": "stories",
+    "book now": "book",
+  };
 }
+
 
 export default Nav;
