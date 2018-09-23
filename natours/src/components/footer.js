@@ -65,11 +65,37 @@ const FooterBottomRight = () => {
 };
 
 const FooterTop = () => (
-  <div className="footer__logo-box u-margin-bottom-big">
-    <img
+  <div className="footer__logo-box">
+
+    {/* below is art direction */}
+    <picture className="footer__logo">
+      <source
+        srcSet={`
+          ${require("../img/logo-green-small-1x.png")} 1x,
+          ${require("../img/logo-green-small-2x.png")} 2x
+        `}
+        media="(max-width: 37.5em)">
+      </source>
+
+      <img
+        alt="Full logo"
+        className="footer__logo"
+        src={require("../img/logo-green-2x.png")}
+        srcSet={`
+          ${require("../img/logo-green-1x.png")} 1x,
+          ${require("../img/logo-green-2x.png")} 2x
+        `}
+      />
+    </picture>
+
+    {/* below is density switching */}
+    {/* <img
       alt="Full logo"
       className="footer__logo"
-      src={require("../img/logo-green-2x.png")}
-    />
+      srcSet={`
+        ${require("../img/logo-green-1x.png")} 1x,
+        ${require("../img/logo-green-2x.png")} 2x
+      `}
+    /> */}
   </div>
 );

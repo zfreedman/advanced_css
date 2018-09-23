@@ -1,12 +1,20 @@
 .row {
   @include clearfix;
 
-  // background-color: #eee;
   margin: 0 auto;
   max-width: $grid-width;
+
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
   
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   // attribute selector
@@ -17,6 +25,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(tab-port) {
+        margin-bottom: $gutter-vertical-small;
+        margin-right: 0;
+      }
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
     }
   }
 
