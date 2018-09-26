@@ -1,5 +1,11 @@
 import React from "react";
 
+import Header from "./header";
+import Content from "./content";
+
 export default () => (
-  <div>App goes here</div>
+  <div className="container">
+    <Header />
+    <Content />
+  </div>
 );

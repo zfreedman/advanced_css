@@ -1,4 +1,7 @@
 :root {
+  // box shadows
+  --box-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+
   // colors
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
@@ -13,5 +16,8 @@
   --color-primary-dark: #ba265d;
   --color-primary-light: #ff3366;
 
+  --color-white: white;
+
+  // fonts
   --font-color: var(--color-grey-dark-2);
 }
