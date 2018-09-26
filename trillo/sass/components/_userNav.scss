@@ -1,0 +1,28 @@
+.user-nav {
+
+  &__icon {
+    height: var(--icon-size-2);
+    width: var(--icon-size-2);
+  }
+  
+  &__icon-box {
+
+  }
+
+  &__notification {
+
+  }
+
+  &__user {
+
+  }
+
+  &__user-name {
+
+  }
+
+  &__user-photo {
+    border-radius: 50%;
+    height: var(--icon-size-3);
+  }
+}
