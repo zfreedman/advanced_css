@@ -6,7 +6,7 @@ const iconNotificationMap = {
 };
 
 export default () => (
-  <nav classname="user-nav">
+  <nav className="user-nav">
     {
       Object.keys(iconNotificationMap).map(key =>
         renderIcon(key, iconNotificationMap[key])
