@@ -26,10 +26,14 @@
   // background-color: var(--color-white);
   background-color: orangered;
   flex: 1;
+  height: 80rem;
 }
 
 .sidebar {
   align-items: stretch;
   background-color: var(--color-grey-dark-1);
+  display: flex;
   flex: 0 0 18%;
+  flex-direction: column;
+  justify-content: space-between;
 }
