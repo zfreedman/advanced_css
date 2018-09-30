@@ -26,7 +26,7 @@ export default () => (
 );
 
 const renderIcon = (iconName, notifCount) => (
-  <div className="user-nav__icon-box">
+  <div className="user-nav__icon-box" key={iconName}>
     <svg className="user-nav__icon">
       <use xlinkHref={`../../img/sprite.svg#icon-${iconName}`} />
     </svg>
