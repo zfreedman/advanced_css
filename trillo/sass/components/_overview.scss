@@ -1,0 +1,32 @@
+.overview {
+  display: flex;
+
+  &__heading {
+
+  }
+
+  &__icon-location,
+  &__icon-star {
+    fill: var(--color-primary);
+    height: var(--icon-size-0);
+    width: var(--icon-size-0);
+  }
+
+  &__location {
+  }
+  
+  &__stars {
+    // special trick to create space between elements w/ flexbox
+    margin-right: auto;
+  }
+
+  &__rating {
+    &-average {
+
+    }
+
+    &-count {
+
+    }
+  }
+}
