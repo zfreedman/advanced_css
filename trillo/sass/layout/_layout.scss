@@ -5,7 +5,7 @@
 
 .container {
   background-color: var(--color-grey-light-1);
-  box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-1);
   margin: 8rem auto;
   max-width: 120rem;
   min-height: 50rem;
@@ -14,7 +14,7 @@
 .header {
   align-items: center;
   background-color: var(--color-white);
-  border-bottom: .1rem solid var(--color-grey-light-2);
+  border-bottom: $border-bottom-small;
   display: flex;
   font-size: 1.4rem;
   height: 7rem;

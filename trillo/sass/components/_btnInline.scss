@@ -1,0 +1,40 @@
+.btn-inline {
+  background-color: transparent;
+  border: none;
+  border-bottom: .1rem solid currentColor;
+  cursor: pointer;
+  color: var(--color-primary);
+  display: inline-block;
+  font-size: inherit;
+  padding-bottom: .2rem;
+  transition: var(--transition-all-1);
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+  }
+
+  // alphabetically before :hover, but
+  // logically after :hover
+  &:focus {
+    animation: pulsate 1s infinite;
+    animation-timing-function: ease-in-out;
+    outline: none;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: var(--box-shadow-0);
+    transform: scale(1.05);
+  }
+
+  100% {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
