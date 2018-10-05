@@ -1,6 +1,6 @@
 .overview {
   align-items: center;
-  border-bottom: $border-bottom-small;
+  border-bottom: var(--border-bottom-0);
   display: flex;
 
   &__heading {

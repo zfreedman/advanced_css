@@ -11,10 +11,25 @@
   min-height: 50rem;
 }
 
+.description {
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-2);
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  padding: 3rem;
+}
+
+.detail {
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--border-bottom-0);
+  display: flex;
+  padding: 4.5rem;
+}
+
 .header {
   align-items: center;
   background-color: var(--color-white);
-  border-bottom: $border-bottom-small;
+  border-bottom: var(--border-bottom-0);
   display: flex;
   font-size: 1.4rem;
   height: 7rem;
@@ -25,7 +40,7 @@
   align-items: stretch;
   background-color: var(--color-white);
   flex: 1;
-  height: 80rem;
+  // height: 80rem;
 }
 
 .sidebar {
@@ -35,4 +50,9 @@
   flex: 0 0 18%;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1;
 }
