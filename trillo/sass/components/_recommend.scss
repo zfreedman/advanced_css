@@ -1,0 +1,24 @@
+.recommend {
+  align-items: center;
+  display: flex;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    border: .3rem solid var(--color-white);
+    border-radius: 50%;
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}

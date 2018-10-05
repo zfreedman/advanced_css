@@ -26,6 +26,18 @@ const Detail = () => {
     "perfect for families",
   ];
 
+  const listItemBeforeStyle = {
+    // backgroundImage: `url("../img/chevron-thin-right.svg")`,
+
+    // for future browsers
+    maskImage: `url("../img/chevron-thin-right.svg")`,
+    maskSize: "cover",
+
+    // for current browsers
+    webkitMaskImage: `url("../img/chevron-thin-right.svg")`,
+    webkitMaskSize: "cover",
+  };
+
   return (
     <div className="detail">
       <div className="description">
@@ -38,7 +50,19 @@ const Detail = () => {
         <ul className="list">
           {
             ulItems.map((e, i) => (
-              <li className="list__item" key={`ulItem-${i}`}>
+              <li
+                className="list__item"
+                key={`ulItem-${i}`}
+              >
+                {/* <img
+                  alt={`List icon`}
+                  className="list__item-before"
+                  src="../../img/chevron-thin-right.svg"
+                /> */}
+                <span
+                  className="list__item-before"
+                  style={listItemBeforeStyle}>
+                </span>
                 {e[0].toUpperCase() + e.substr(1)}
               </li>
             ))
@@ -56,6 +80,7 @@ const Detail = () => {
                 <img
                   alt={`Friend ${i}`}
                   className="recommend__photo"
+                  key={`friend-${i}`}
                   src={`../../img/user-${i + 2}.jpg`}
                 />
               ))
