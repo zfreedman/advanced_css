@@ -9,8 +9,17 @@
   padding-bottom: .2rem;
   transition: var(--transition-all-1);
 
+  & span {
+    margin-left: .3rem;
+    transition: margin-left .2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    & span {
+      margin-left: .8rem;
+    }
   }
 
   // alphabetically before :hover, but

@@ -15,6 +15,20 @@ const Detail = () => {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.",
     "Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.",
   ];
+  const reviews = [
+    [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.",
+      "Nick Smith",
+      "Feb 23rd, 2018",
+      7.8,
+    ],
+    [
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.",
+      "Mary Thomas",
+      "Sep 13th, 2017",
+      9.3,
+    ]
+  ];
   const ulItems = [
     "close to the beach",
     "breakfast included",
@@ -81,7 +95,7 @@ const Detail = () => {
                   alt={`Friend ${i}`}
                   className="recommend__photo"
                   key={`friend-${i}`}
-                  src={`../../img/user-${i + 2}.jpg`}
+                  src={`../../img/user-${i + 3}.jpg`}
                 />
               ))
             }
@@ -90,7 +104,35 @@ const Detail = () => {
       </div>
       
       <div className="user-reviews">
-        User reviews
+        {
+          reviews.map((e, i) => (
+            <figure className="review" key={`review-${i}`}>
+                <blockquote className="review__text">
+                  {e[0]}
+                </blockquote>
+
+                <figcaption className="review__user">
+                  <img
+                    alt={`User ${i + 1}`}
+                    className="review__photo"
+                    src={`../../img/user-${i + 1}.jpg`}
+                  />
+
+                  <div className="review__user-box">
+                    <p className="review__user-name">{e[1]}</p>
+
+                    <p className="review__user-date">{e[2]}</p>
+                  </div>
+
+                  <div className="review__rating">{e[3]}</div>
+                </figcaption>
+            </figure>
+          ))
+        }
+
+        <button className="btn-inline">
+          Show all <span>&rarr;</span>
+        </button>
       </div>
     </div>
   );
