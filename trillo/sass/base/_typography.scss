@@ -1,3 +1,17 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cta {
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
 .detail {
   font-size: 1.4rem;
 }

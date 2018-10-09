@@ -1,11 +1,14 @@
 import React from "react";
 
+import CallToAction from "./callToAction";
+
 export default () => {
   return (
     <main className="hotel-view">
       <PhotoGallery />
       <Overview />
       <Detail />
+      <CallToAction />
     </main>
   );
 };
@@ -48,8 +51,8 @@ const Detail = () => {
     maskSize: "cover",
 
     // for current browsers
-    webkitMaskImage: `url("../img/chevron-thin-right.svg")`,
-    webkitMaskSize: "cover",
+    WebkitMaskImage: `url("../img/chevron-thin-right.svg")`,
+    WebkitMaskSize: "cover",
   };
 
   return (
