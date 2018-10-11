@@ -8,6 +8,11 @@
   padding: 3rem;
   position: relative;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+
   &::before {
     color: var(--color-grey-light-2);
     content: "\201C";

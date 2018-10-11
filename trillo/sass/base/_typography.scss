@@ -23,6 +23,44 @@ html {
   font-size: 62.5%;
   font-weight: 400;
   line-height: 1.6;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+.overview {
+
+  &__heading {
+    font-size: var(--icon-size-2);
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__rating {
+    &-average {
+      font-size: var(--icon-size-2);
+      font-weight: 300;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &-count {
+      font-size: .8rem;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: .5rem;
+      }
+    }
+  }
 }
 
 .recommend {

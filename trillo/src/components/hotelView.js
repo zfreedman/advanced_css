@@ -37,9 +37,9 @@ const Detail = () => {
     "breakfast included",
     "free airport shuttle",
     "free wifi in all rooms",
-    "air conditioning and heating",
+    "AC and heating",
     "pets allowed",
-    "we speak all languages",
+    "any language",
     "perfect for families",
   ];
 
