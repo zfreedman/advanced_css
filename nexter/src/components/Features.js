@@ -55,7 +55,7 @@ export default () => {
                 <use xlinkHref={`#sprite_icon-${icon}`} />
               </svg>
 
-              <h4 className="heading-4">{heading}</h4>
+              <h4 className="heading-4 heading-4--dark">{heading}</h4>
 
               <p className="feature__text">{text}</p>
             </div>
