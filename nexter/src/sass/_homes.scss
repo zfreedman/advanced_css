@@ -1,4 +1,40 @@
+.home {
+  background-color: $color-grey-light-1;
+
+  &__area,
+  &__location,
+  &__price,
+  &__rooms {
+    
+    & > svg {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    & > p {
+
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__like {
+
+  }
+
+  &__name {
+
+  }
+}
+
 .homes {
-  background-color: $color-secondary;
+  // background-color: $color-secondary;
+  display: grid;
   grid-column: center-start / center-end;
+  grid-gap: 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin: 15rem 0;
 }
