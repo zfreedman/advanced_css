@@ -8,7 +8,9 @@ import Header from "./Header";
 import Homes from "./Homes";
 import Realtors from "./Realtors";
 import Sidebar from "./Sidebar";
-import Story from "./Story";
+import StoryContent from "./StoryContent";
+import StoryPictures from "./StoryPictures";
+// import Story from "./Story";
 
 class App extends Component {
   render() {
@@ -18,7 +20,8 @@ class App extends Component {
         <Header />
         <Realtors />
         <Features />
-        <Story />
+        <StoryContent />
+        <StoryPictures />
         <Homes />
         <Gallery />
         <Footer />
