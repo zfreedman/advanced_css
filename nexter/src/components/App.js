@@ -20,8 +20,8 @@ class App extends Component {
         <Header />
         <Realtors />
         <Features />
-        <StoryContent />
         <StoryPictures />
+        <StoryContent />
         <Homes />
         <Gallery />
         <Footer />
