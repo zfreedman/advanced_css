@@ -58,8 +58,8 @@ const homes = [
 ];
 
 // https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
-const formatCurrency = num => (
-  "$" + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+const formatNumber = num => (
+  num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 );
 
 export default function Homes() {
@@ -70,7 +70,7 @@ export default function Homes() {
           <div className="home" key={`home ${i + 1}`}>
             <img
               alt={`House ${i + 1}`}
-              class="home__img"
+              className="home__img"
               src={require(`../img/house-${i + 1}.jpeg`)}
             />
 
@@ -78,7 +78,7 @@ export default function Homes() {
               <use xlinkHref={`#sprite_icon-heart-full`} />
             </svg>
 
-            <h5 class="home__name">{e.title}</h5>
+            <h5 className="home__name">{e.title}</h5>
 
             <div className="home__location">
               <svg>
@@ -101,7 +101,7 @@ export default function Homes() {
                 <use xlinkHref={`#sprite_icon-expand`} />
               </svg>
 
-              <p>{e.sqMeters}<sup>2</sup> m</p>
+              <p>{formatNumber(e.sqMeters)} m<sup>2</sup></p>
             </div>
 
             <div className="home__price">
@@ -109,10 +109,10 @@ export default function Homes() {
                 <use xlinkHref={`#sprite_icon-key`} />
               </svg>
 
-              <p>{formatCurrency(e.priceUSD)}</p>
+              <p>${formatNumber(e.priceUSD)}</p>
             </div>
 
-            <button className="cta">Contact realtor</button>
+            <button className="btn home__btn">Contact realtor</button>
           </div>
         ))
       }
