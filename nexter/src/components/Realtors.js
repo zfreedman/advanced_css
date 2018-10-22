@@ -25,7 +25,7 @@ export default () => {
               ++i;
 
               return (
-                <div className="realtors__item">
+                <div className="realtors__item" key={`realtor ${i}`}>
                   <img
                     alt={ `Realtor ${i}` }
                     className="realtors__img"

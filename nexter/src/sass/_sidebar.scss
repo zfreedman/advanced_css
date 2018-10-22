@@ -7,6 +7,15 @@
   // if this sidebar is breaking, switch this
   // with the margin top in .nav-btn
   padding-top: 4rem;
+
+  @media only screen and (max-width: $bp-lg) {
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    padding-top: 0;
+  }
 }
 
 .nav-btn {
@@ -33,5 +42,15 @@
 
   &::before {
     transform: translateY(-1.5rem);
+  }
+
+  @media only screen and (max-width: $bp-lg) {
+    &::after {
+      transform: translateY(1.0rem);
+    }
+  
+    &::before {
+      transform: translateY(-1.2rem);
+    }
   }
 }
