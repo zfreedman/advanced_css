@@ -3,7 +3,6 @@ import React from 'react'
 export default function Gallery() {
   return (
     <section className="gallery">
-    (figure.gallery__item.gallery__item--$>img.gallery__img*14)*14
     {
       " ".repeat(14).split("").map((e, i) => {
         // could just do i + 1 everywhere, but this is easier
